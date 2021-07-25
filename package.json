@@ -1,0 +1,23 @@
+{
+  "name": "Web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"tailwindcss build src/style.css -o public/style.css"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zsolti145/Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zsolti145/Web/issues"
+  },
+  "homepage": "https://github.com/Zsolti145/Web#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}
