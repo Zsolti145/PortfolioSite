@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-primary{
+    background: url(https://images.unsplash.com/photo-1553289038-6638b1a1802a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+nav {
+    margin-bottom: 20px;
+}
+
+.navbar{
+margin:auto;
+}
+
+section {
+    padding: 2em 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+/* Animáció a projektekhez */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top{
+    background: url("https://images.unsplash.com/photo-1553792843-ffafe0bf6032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D");
+}
