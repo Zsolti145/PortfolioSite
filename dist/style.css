@@ -39,7 +39,7 @@ footer {
 
 .card:hover {
     transform: scale(1.05);
-    color: black;
+    color: #6fabb4;
 }
 
 .card-img-top{
