@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
     <title>Zsolt Lazar Portfolio</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a href="#"><i class="fa-solid fa-bolt fa-beat-fade" style="color: #f2e231;"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -54,13 +59,15 @@
             <h2 class="mb-4">Projects</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <a class="cardLink" href="firstsite.html"><div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1553792843-ffafe0bf6032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D" alt="Projekt 1" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">This Portfolio project</h3>
-                            <p class="card-text">Yeah actually this is my first serious project</p>
+                    <a class="cardLink" href="firstsite.html">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1553792843-ffafe0bf6032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D"
+                                alt="Projekt 1" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">This Portfolio project</h3>
+                                <p class="card-text">Yeah actually this is my first serious project</p>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <!-- További projektek ... -->
@@ -68,34 +75,61 @@
         </div>
     </section>
 
-<section id="skills" class="bg-light py-5">
-<div class="container">
-    <h2  class="mb-4">Skills</h2>
-    <div class="row row-cols-1 row-cols-md-3">
-       <div class="col">
-        <div class="card h-100">
-        <div class="card-body">
-            <i class="fa-solid fa-code"></i>
-            <h3 class="card-title">Frontend</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam, eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4">Skills</h2>
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code"></i>
+                            <h3 class="card-title">Frontend</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
+                                pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam,
+                                eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-       </div>  
-    </div>
-</div>
 
-</section>
+    </section>
 
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="mb-4">About</h2>
-           <p>Email:<a href="mailto:zsoltika192@gmail.com">zsoltika192@gmail.com</a> </p>
+            <p>Email:<a href="mailto:zsoltika192@gmail.com">zsoltika192@gmail.com</a> </p>
             <p>LinkedIn: </p>
             <p>GitHub: github.com/Zsolti145</p>
         </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">
+        <section class="contact-form" >
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <h2 class="mb-4">Contact Me</h2>
+                <form class="contact-form" action="https://formsubmit.co/zsoltika192@gmail.com" method="POST">
+                    <label for="Email"></label>
+                    <div class="mb-3">
+                        <input class="form-control" type="text" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="textarea" id="texta" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <input type="hidden" name="_next" value="https://lzsportfolio.netlify.app/?#contact">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+            </div>
+        </section>
         <p>&copy; 2023 Zsolt Lazar</p>
     </footer>
 
@@ -103,4 +137,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
