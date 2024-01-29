@@ -51,7 +51,6 @@ footer {
     color: black;
 }
 .contact-form {
-    background-color: #333;
     color: #fff;
     padding: 4rem 0;
 }
@@ -72,10 +71,11 @@ footer {
     color: #ccc;
 }
 .btn-primary {
-    background-color: #ff7f50;
+    background-color: #ff7f50!important;
     border-color: #ff7f50;
     border-radius: 20px;
     transition: background-color 0.3s;
+    color: black;
 }
 .btn-primary:hover {
     background-color: #f36231;
