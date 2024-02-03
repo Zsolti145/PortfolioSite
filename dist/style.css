@@ -12,10 +12,24 @@ body {
     background-attachment: fixed;
 }
 
-
+.bg-firstsite{
+    background: rgb(62,147,204);
+    background: linear-gradient(211deg, rgba(62,147,204,1) 0%, rgba(110,99,116,1) 60%, rgba(11,46,86,1) 100%, rgba(7,39,77,1) 100%);
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ #maintenence{
+    height: auto;
+    width: auto;
+ }
 
 nav {
     margin-bottom: 20px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
 }
 
 .navbar{
@@ -50,6 +64,11 @@ footer {
     text-decoration: none;
     color: black;
 }
+a{
+    text-decoration: none;
+    color: #343a40;
+}
+
 .contact-form {
     color: #fff;
     padding: 4rem 0;
@@ -80,4 +99,7 @@ footer {
 .btn-primary:hover {
     background-color: #f36231;
     border-color: #f36231;
+}
+#footer{
+    margin-top: 100vh;
 }
