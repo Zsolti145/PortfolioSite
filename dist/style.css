@@ -56,10 +56,6 @@ footer {
     color: #6fabb4;
 }
 
-.card-img-top{
-    background: url("https://images.unsplash.com/photo-1553792843-ffafe0bf6032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D");
-}
-
 .cardLink{
     text-decoration: none;
     color: black;
