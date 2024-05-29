@@ -9,7 +9,6 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
     <title>Zsolt Lazar Portfolio</title>
 </head>
 
@@ -18,9 +17,9 @@
         <div class="container">
             <a href="#"><i class="fa-solid fa-bolt fa-beat-fade" style="color: #f2e231;"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -42,6 +41,7 @@
 
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
+            <div class="profile"><img src="img/pixiz.png" alt="nftprof"></div>
             <h1 class="display-4">Zsolt Lazar</h1>
             <p class="lead">WebDeveloper</p>
         </div>
@@ -50,10 +50,9 @@
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="bg-slate-400 mb-4 ">About me</h2>
-            <p>Üdvözlöm! John vagyok, egy lelkes webfejlesztő. Szakmai területemen belül...</p>
+            <p>Test text {Will be a text about me}</p>
         </div>
     </section>
-
     <section id="projects" class="bg-light py-5">
         <div class="container">
             <h2 class="mb-4">Projects</h2>
@@ -61,8 +60,7 @@
                 <div class="col">
                     <a class="cardLink" href="firstsite.html">
                         <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1553792843-ffafe0bf6032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D"
-                                alt="Portfolioprojekt" class="card-img-top">
+                            <img src="img/portfolio.png"  alt="Portfolioproject" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">This Portfolio project</h3>
                                 <p class="card-text">Yeah actually this is my first serious project</p>
@@ -70,16 +68,26 @@
                         </div>
                     </a>
                 </div>
-                <!-- További projektek ... -->
+                <!-- Next projects ... -->
                 <div class="col">
                     <a class="cardLink" href="#">
                         <div class="card h-100">
-                            <img
-                                src="img/finalexam.jpg" class="card-img-top">
+                            <img src="img/finalexam.jpg" class="card-img-top" alt="finalexam promo">
                             <div class="card-body">
                                 <h3 class="card-title">My finalexam site</h3>
                                 <p>I made it when i were at High School</p>
                             </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="cardLink" href="https://therealfan.netlify.app">
+                        <div class="card h-100">
+                            <img src="img/realfan.png" class="card-img-top" alt="therealfan project">
+                            <div class="card-body">
+                                <h3 class="card-title">The realfan</h3>
+                                <p>A cool little webapp that chack if you are a Real The Weeknd fan!</p>
+                             </div>
                         </div>
                     </a>
                 </div>
@@ -89,15 +97,17 @@
     <section id="skills" class="bg-light py-5">
         <div class="container">
             <h2 class="mb-4">Skills</h2>
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="row row-cols-2 row-cols-md-4">
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
                             <i class="fa-solid fa-code"></i>
                             <h3 class="card-title">Frontend</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
-                                pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam,
-                                eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
+                            <hr>
+                            <p class="card-text">Html,css,JavaScript<br>
+                                Client server usage,Git and Github user level knowledge,<br>
+                                Framework:Bootsrap (for now, later i want to learn react),<br>
+                                Responsive Design</p>
                         </div>
                     </div>
                 </div>
@@ -106,6 +116,7 @@
                         <div class="card-body">
                             <i class="fa-solid fa-database"></i>
                             <h3 class="card-title">Backend</h3>
+                            <hr>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
                                 pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam,
                                 eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
@@ -117,9 +128,20 @@
                         <div class="card-body">
                             <i class="fa-solid fa-pen"></i>
                             <h3 class="card-title">Design</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
-                                pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam,
-                                eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
+                            <hr>
+                            <p class="card-text">Using modern and flat desing,editing illustrations,<br>
+                             learning how to make cool UI/UX elements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-palette"></i>
+                            <h3 class="card-title">Creative</h3>
+                            <hr>
+                            <p class="card-text">Its similar to design but i really like to editing videos and making photos in Photoshop in my free time</p>
                         </div>
                     </div>
                 </div>
@@ -143,12 +165,11 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <h2 class="mb-4">Contact Me</h2>
                     <form class="contact-form" action="https://formsubmit.co/zsoltika192@gmail.com" method="POST" netlify>
-                        <label for="Email"></label>
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="email" id="email" placeholder="Your Email">
+                            <input class="form-control" type="text" name="email" id="email" placeholder="Your Email" autocomplete="email">
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Your name">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Your name" autocomplete="name">
                         </div>
                         <div class="mb-3">
                             <textarea class="form-control" name="message" id="texta" cols="30" rows="5"
@@ -165,9 +186,9 @@
             </div>
         </section>
         <hr>
-        <p>&copy; 2023 Zsolt Lazar</p>
+        <p>&copy; 2024 Zsolt Lazar</p>
     </footer>
-
+<script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
