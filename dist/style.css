@@ -1,101 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+.display-4 {
+  color: black;
+}
+.lead {
+  color: #343a40;
 }
 
-.bg-primary{
-    background: url(https://images.unsplash.com/photo-1553289038-6638b1a1802a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.bg-primary {
+  background: url(https://images.unsplash.com/photo-1553289038-6638b1a1802a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-.bg-firstsite{
-    background: rgb(62,147,204);
-    background: linear-gradient(211deg, rgba(62,147,204,1) 0%, rgba(110,99,116,1) 60%, rgba(11,46,86,1) 100%, rgba(7,39,77,1) 100%);
-    background-size: cover;
-    position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.navbg {
+  background-image: url("img/portfolio.png");
 }
- #maintenence{
-    height: auto;
-    width: auto;
- }
+.bg-firstsite {
+  background-image: url("img/portfolio.png");
+  /*  background: rgb(62,147,204);
+   /* background: linear-gradient(211deg, rgba(62,147,204,1) 0%, rgba(110,99,116,1) 60%, rgba(11,46,86,1) 100%, rgba(7,39,77,1) 100%);*/
+  background-size: cover;
+  position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+}
+#maintenence {
+  height: auto;
+  width: auto;
+}
 
 nav {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.navbar-dark .navbar-nav .nav-link{
-    color: #fff;
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 20px;
 }
-
-.navbar{
-margin:auto;
+.navbar {
+  margin: auto;
 }
 
 section {
-    padding: 2em 0;
+  padding: 2em 0;
 }
 
 footer {
-    background-color: #343a40;
-    color: #fff;
+  background-color: #343a40;
+  color: #fff;
 }
-
 
 /* Animáció a projektekhez */
 .card {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    color: #6fabb4;
+  transform: scale(1.05);
+  color: #6fabb4;
 }
 
-.cardLink{
-    text-decoration: none;
-    color: black;
+.card-text{
+    font-size: 20px;
 }
-a{
-    text-decoration: none;
-    color: #343a40;
+.cardLink {
+  text-decoration: none;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #343a40;
+}
+.card-img-top {
+  height: 240px;
+  width: auto;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  border-radius: 15px;
 }
 
 .contact-form {
-    color: #fff;
-    padding: 4rem 0;
+  color: #fff;
+  padding: 4rem 0;
 }
 .form-control {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 .form-control:focus {
-    background-color: #555;
-    color: #fff;
-    border-color: #ff7f50;
-    box-shadow: none;
+  background-color: #555;
+  color: #fff;
+  border-color: #ff7f50;
+  box-shadow: none;
 }
 .form-control::placeholder {
-    color: #ccc;
+  color: #ccc;
 }
 .btn-primary {
-    background-color: #ff7f50!important;
-    border-color: #ff7f50;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-    color: black;
+  background-color: #ff7f50 !important;
+  border-color: #ff7f50;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  color: black;
 }
 .btn-primary:hover {
-    background-color: #f36231;
-    border-color: #f36231;
+  background-color: #f36231;
+  border-color: #f36231;
 }
-#footer{
-    margin-top: 100vh;
+#footer {
+  margin-top: 100vh;
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    border-radius: 50%;
+    box-shadow: 4px 6px 12px 4px #dacfb9;
+}
+.profile{
+    padding-bottom: 5px;
 }

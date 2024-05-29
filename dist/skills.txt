@@ -1,0 +1,4 @@
+Html,css,JavaScript
+Client server usage,Git and Github user level knowledge
+Framework:Bootsrap (for now, later i want to lesan react)
+Responsive Design
