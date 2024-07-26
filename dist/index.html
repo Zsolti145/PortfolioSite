@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a href="#"><i class="fa-solid fa-bolt fa-beat-fade" style="color: #f2e231;"></i></a>
+            <a href="#"><img  class="profile" src="img/pixiz.png" alt="nftprof" ></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,63 +29,87 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                 </ul>
+                <a href="#contact"><button class="hireme-btn">Hire me</button></a>
             </div>
         </div>
     </nav>
-
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <div class="profile"><img src="img/pixiz.png" alt="nftprof"></div>
-            <h1 class="display-4">Zsolt Lazar</h1>
-            <p class="lead">WebDeveloper</p>
+    
+    <header class="container-header row row-cols-1 row-cols-md-2">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1 >Hi! I am <span class="about-name">Zsolt</span></h1>
+            <p>I'm a beginner freelance web developer. I really enjoy making websites or webapps. I want to gain more experience while working in the profession and in a team.</p>
+            <button class="btn">Get strarted!</button>
         </div>
+        <div class="header-image"> <img src="img/codeing.svg" alt="nftprof"></div>
     </header>
-
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="bg-slate-400 mb-4 ">About me</h2>
-            <p>Test text {Will be a text about me}</p>
-        </div>
-    </section>
-    <section id="projects" class="bg-light py-5">
-        <div class="container">
-            <h2 class="mb-4">Projects</h2>
+    <!-- 
+<section class="container py-5">
+<div class="col wrapper py-5 mb-3">
+    <div class="panel">
+        <h1>First project</h1>
+        <img class="panelpics" src="img/finalexam.jpg" alt="">
+        <h2>Concept</h2>
+        <p>blah blah</p>
+    </div>
+    <div class="panel">
+        <h1>First project</h1>
+        <img class="panelpics" src="img/portfolio.png" alt="">
+        <h2>Concept</h2>
+        <p>blah blah</p>
+    </div>
+    <div class="panel">
+        <h1>First project</h1>
+        <img class="panelpics" src="img/realfan.png" alt="">
+        <h2>Concept</h2>
+        <p>blah blah</p>
+    </div>
+</div>
+</section>
+-->
+    <section class="container py-5" id="projects">
+        <div class="">
+            <span class="blur2"></span>
+            <span class="blur2"></span>
+            <h2 class="mb-4 projectHeader">Projects</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <a class="cardLink" href="firstsite.html">
+                    <a class="cardLink" href="#projects">
                         <div class="card h-100">
                             <img src="img/portfolio.png"  alt="Portfolioproject" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">This Portfolio project</h3>
-                                <p class="card-text">Yeah actually this is my first serious project</p>
+                                <h3 class="card-title-project">Portfolio Site</h3>
+                                <p>This portfolio website is my first serious project,where I could practice building the website and publishing it with version control.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- Next projects ... -->
+                
                 <div class="col">
                     <a class="cardLink" href="#">
                         <div class="card h-100">
                             <img src="img/finalexam.jpg" class="card-img-top" alt="finalexam promo">
                             <div class="card-body">
-                                <h3 class="card-title">My finalexam site</h3>
+                                <h3 class="card-title-project">My finalexam site</h3>
                                 <p>I made it when i were at High School</p>
                             </div>
                         </div>
                     </a>
                 </div>
+
                 <div class="col">
                     <a class="cardLink" href="https://therealfan.netlify.app">
                         <div class="card h-100">
                             <img src="img/realfan.png" class="card-img-top" alt="therealfan project">
                             <div class="card-body">
-                                <h3 class="card-title">The realfan</h3>
+                                <h3 class="card-title-project">The realfan</h3>
                                 <p>A cool little webapp that chack if you are a Real The Weeknd fan!</p>
                              </div>
                         </div>
@@ -93,33 +117,32 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="skills" class="bg-light py-5">
+      </section>
+
+    <section id="skills" class="container py-5">
         <div class="container">
-            <h2 class="mb-4">Skills</h2>
-            <div class="row row-cols-2 row-cols-md-4">
+            <h2 class="mb-4" id="skillsHeader">Skills</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 skill-cards">
                         <div class="card-body">
                             <i class="fa-solid fa-code"></i>
-                            <h3 class="card-title">Frontend</h3>
+                            <h3 class="card-title-skills">Frontend</h3>
                             <hr>
-                            <p class="card-text">Html,css,JavaScript<br>
-                                Client server usage,Git and Github user level knowledge,<br>
-                                Framework:Bootsrap (for now, later i want to learn react),<br>
-                                Responsive Design</p>
+                            <p class="card-text">HTML, CSS, JavaScript<br>
+                                Client-server usage, Git and Github user-level version handling knowledge,
+Framework: Bootstrap ,Responsive Design.
+(I just get started to learn React)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card cd-skills h-100">
                         <div class="card-body">
                             <i class="fa-solid fa-database"></i>
-                            <h3 class="card-title">Backend</h3>
+                            <h3 class="card-title-skills">Backend</h3>
                             <hr>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
-                                pariatur fugit, blanditiis error maxime tempora similique autem, nulla laboriosam,
-                                eveniet modi asperiores nesciunt? Tempora totam perferendis facilis facere fugiat?</p>
+                            <p class="card-text">C# and object-oriented development, Java, PHP, and Python at a beginner level</p>
                         </div>
                     </div>
                 </div>
@@ -127,10 +150,11 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <i class="fa-solid fa-pen"></i>
-                            <h3 class="card-title">Design</h3>
+                            <h3 class="card-title-skills">Design</h3>
                             <hr>
-                            <p class="card-text">Using modern and flat desing,editing illustrations,<br>
-                             learning how to make cool UI/UX elements
+                            <p class="card-text">Using modern and <span class="spflat">/flat design/</span>,
+                                editing illustrations,
+                                learning how to make cool UI/UX elements.
                             </p>
                         </div>
                     </div>
@@ -139,9 +163,9 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <i class="fa-solid fa-palette"></i>
-                            <h3 class="card-title">Creative</h3>
+                            <h3 class="card-title-skills">Creative</h3>
                             <hr>
-                            <p class="card-text">Its similar to design but i really like to editing videos and making photos in Photoshop in my free time</p>
+                            <p class="card-text">I really like editing videos, making Photoshop images in my free time.</p>
                         </div>
                     </div>
                 </div>
@@ -154,12 +178,12 @@
         <div class="container">
             <h2 class="mb-4">Socials</h2>
             <!--<p>Email:<a href="mailto:zsoltika192@gmail.com">zsoltika192@gmail.com</a> </p>-->
-            <p>LinkedIn: </p>
+            <p>LinkedIn: LinkedIn profile soon!</p>
             <p>GitHub: <a href="https://github.com/Zsolti145" target="_blank">Zsolti145</a></p>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-3">
         <section id="contact" class="contact-form">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
