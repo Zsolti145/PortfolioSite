@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
   margin:0;
   padding: 0;
@@ -98,7 +97,7 @@ header .header-image img{
 
 }
 header .btn{
-  padding:20px 10px;
+  padding: .5em 2em;
   margin: 10px auto;
   border-radius: 15px;
   color: #ccc;
@@ -118,7 +117,7 @@ header .header-image::before{
 }
 */
 .hireme-btn{
-  padding: 1em 2em;
+  padding: .5em 2em;
   margin: 5px;
   outline-style: none;
   border: 1px solid #5C8374;
@@ -160,10 +159,10 @@ footer {
   background-color: #183D3D;
   color: #fff;
 }
-.wrapper{
+/* .wrapper{
   display: flex;
   gap:20px;
-  /*max-width:max-content;*/
+  /*max-width:max-content;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
@@ -203,7 +202,7 @@ footer {
   background-size: cover;
   width: 650px;
 }
-
+ */
 
 /* Animáció a projektekhez */
 .card {
@@ -308,44 +307,9 @@ font-size: 2em;
 
 .profile{
     padding-bottom: 5px;
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-}
-
-.wave {
-  position: absolute;
-  height: 75px;
-  width: 100%;
-  background: #040D12;
-  bottom: 0;
-}
-
-.wave::before, .wave::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-}
-
-.wave::before {
-  width: 55%;
-  height: 109%;
-  background-color: #040D12 !important;
-  right: -0.5%;
-  top: 60%;
-}
-.wave::after {
-  width: 55%;
-  height: 100%;
-  background-color: #040D12;
-  left: -1.5%;
-  top: 40%;
-}
-.waveContainer {
-  position: relative;
-  
-  height: 100%;
 }
 
 .spflat{
@@ -354,3 +318,14 @@ font-size: 2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
 }
+
+/* .wrapper::-webkit-scrollbar{
+  background-color: #1a2234;
+    border-radius: 5px;
+}
+
+.wrapper::-webkit-scrollbar-thumb{
+  background-color: #5c8374;
+    padding: 5px;
+    border-radius: 10px;
+} */
