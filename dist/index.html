@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/dist/jquery.js"></script>
-        <script src="/dist/functions.js"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="/dist/index.js"></script>
         <link rel="stylesheet" href="style.css">
     <title>Zsolt Lazar Portfolio</title>
 </head>
@@ -103,7 +102,7 @@
             <h2 class="mb-4" id="skillsHeader">Skills</h2>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
-                    <div class="card h-100 skill-cards">
+                    <div id="carbod" class="card h-100 skill-cards">
                         <div class="card-body">
                             <i class="fa-solid fa-code"></i>
                             <h3 class="card-title-skills">Frontend</h3>
@@ -168,16 +167,17 @@ Framework: Bootstrap ,Responsive Design.
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <h2 class="mb-4">Contact Me</h2>
-                    <form class="contact-form" action="https://formsubmit.co/zsoltika192@gmail.com" method="POST" netlify>
+                    <form class="contact-form" onsubmit="return validateAll();" action="https://formsubmit.co/zsoltika192@gmail.com" method="POST" netlify>
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="email" id="email" placeholder="Your Email" autocomplete="email">
+                            <span class="star" id="emailError">*</span>
+                            <input class="form-control" type="text" id="email" placeholder="Your Email" autocomplete="email" onchange="emailValdiate();">
+                        </div>
+                        <span class="star" id="nameError">*</span>  
+                        <div class="mb-3">
+                            <input class="form-control" type="text" id="username" placeholder="Your name"  onchange="validateName();" >
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Your name" autocomplete="name">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" name="message" id="texta" cols="30" rows="5"
-                                placeholder="Hit me up with your message"></textarea>
+                            <textarea class="form-control" name="message" id="texta" cols="30" rows="5" placeholder="Hit me up with your message"></textarea>
                         </div>
                         <div class="mb-3">
                             <input type="hidden" name="_next" value="https://lzsportfolio.netlify.app/?#contact">
@@ -192,7 +192,7 @@ Framework: Bootstrap ,Responsive Design.
         <hr>
         <p>&copy; 2024 Zsolt Lazar</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
 </body>

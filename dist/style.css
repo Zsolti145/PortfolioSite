@@ -319,6 +319,10 @@ font-size: 2em;
   font-size: 1em;
 }
 
+.star{
+  color: red;
+}
+
 /* .wrapper::-webkit-scrollbar{
   background-color: #1a2234;
     border-radius: 5px;
