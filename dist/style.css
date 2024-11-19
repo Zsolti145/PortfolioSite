@@ -1,3 +1,8 @@
+:root{
+  color-scheme: light dark;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin:0;
@@ -7,20 +12,26 @@
   box-sizing: border-box;
 }
 
-body{ font-family: "Roboto";
-background-color: #040D12;
+body{
+   font-family: "Roboto";
+background-color: light-dark(#FBF8EF,#040D12);
+color: light-dark(#1A1A1D,#FAF7F0) !important;
 }
+body .hireme-btn{
+  background-color: light-dark(#FBF8EF,#040D12);
+  color: light-dark(#1A1A1D,whitesmoke) !important;
+}
+
+
 
 .container-header{
   max-width: 1200px;
   margin:auto;
   padding:5rem 2rem;
 }
-#socials h2{
-  color: white;
-}
+
 #socials p {
-  color: white;
+  /* color: white; */
   font-size: 2em;
   align-content: center;
 
@@ -63,19 +74,16 @@ z-index: -100;
 
 header{
   display: flex;
+  padding-top: 2rem;
 }
 
 .header-image img{
   width: 100%;
 
 }
-header{
-  padding-top: 2rem;
- 
-}
 
 header .content h1{
-  color:#fff;
+  /* color:#fff; */
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -83,7 +91,7 @@ header .content h1{
 }
 header .content p{
   margin-bottom: 2rem;
-  color: #ccc;
+  /* color: #ccc; */
   font-size: 1rem;
 }
 
@@ -111,11 +119,6 @@ background-color: #5C8374;
 border: #5C8374;
 
 }
-/*
-header .header-image::before{
-  content:"O";
-}
-*/
 .hireme-btn{
   padding: .5em 2em;
   margin: 5px;
@@ -144,9 +147,14 @@ nav {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: light-dark(#1A1A1D,#FAF7F0) !important;
   font-size: 20px;
 }
+.navbar-dark .navbar-toggler {
+  background-color: light-dark(#1A1A1D,#114b38);
+ 
+}
+
 .navbar-nav{
 margin-right: 15em;
 }
@@ -240,10 +248,9 @@ font-size: 2em;
 }
 #skillsHeader{
 padding-top: 15px;
-color: white;
 }
 .projectHeader{
-  color: white;
+  
   font-size: 2em;
 }
 
