@@ -2,16 +2,18 @@
 :root {
   color-scheme: light dark;
 }
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
   border: none;
   box-sizing: border-box;
- 
 }
 
 body {
@@ -164,7 +166,7 @@ nav {
   height: fit-content;
   align-self: center;
   text-align: center;
-  width:350px;
+  width: 350px;
 }
 /* .blog .container{
   position: relative;
@@ -186,28 +188,26 @@ nav {
 }  */
 
 .wrapper {
-  background-image: url("https://images.unsplash.com/photo-1461696114087-397271a7aedc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8fDA%3D");
- 
+  background-image: url("landscape.jpg");
   background-size: cover;
+  /* background-attachment: fixed; */
   height: 340px;
   transition: 0.3s ease-in;
   border-radius: 12px;
 }
-@media screen and (min-width: 414px) {
+
+@media screen and (min-width: 380px) {
   .wrapper {
-   background-attachment:fixed;
-  
+    background-attachment: fixed;
   }
-  
-  @media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 852px) {
     .wrapper {
-      background-attachment:fixed;
-     
+      background-attachment: scroll;
+      scroll-behavior: smooth;
     }
-    
   }
 }
-
 
 section {
   padding: 2em 0;
