@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto";
+  background-color: light-dark(#fbf8ef, #040d12);
+  color: light-dark(#1a1a1d, #faf7f0) !important;
+  background-image: url("landscape.jpg");
+  background-size: cover;
+
+  background-attachment: fixed;
+  box-sizing: border-box;
+  padding: auto;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  /* height: 100vh !important; */
+}
+.glass-card {
+  background: rgba(82, 74, 74, 0.267);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: 0.3s ease;
+}
+.list-group-item {
+  background-color: rgba(212, 212, 212, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  border-radius: 16px !important;
+}
+.list-group-item a {
+  color: #faf7f0;
+}
+
+.list-group-item:hover {
+  background-color: rgba(139, 133, 133, 0.267);
+  color: white;
+  transition: 0.3s ease;
+}
