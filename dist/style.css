@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   color-scheme: light dark;
+  --body-bg-color: #fbf8ef;
+  --body-text-color: #1a1a1d;
+  --primary-button-bg-color: #fbf8ef;
+  --primary-button-text-color: #1a1a1d;
+  --navbar-link-color: #1a1a1d;
+  --navbar-toggler-color: #1a1a1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #040d12;
+    --body-text-color: #faf7f0;
+    --primary-button-bg-color: #040d12;
+    --primary-button-text-color: whitesmoke;
+    --navbar-link-color: #faf7f0;
+    --navbar-toggler-color: #114b38;
+  }
 }
 html,
 body {
@@ -18,12 +35,8 @@ body {
 
 body {
   font-family: "Roboto";
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, #faf7f0) !important;
-}
-body .hireme-btn {
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, whitesmoke) !important;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color) !important;
 }
 
 .container-header {
@@ -121,9 +134,9 @@ header .btn:hover {
   margin: 5px;
   outline-style: none;
   border: 1px solid #5c8374;
-  background-color: #040d12;
+  background-color: var(--primary-button-bg-color);
   border-radius: 10px;
-  color: whitesmoke;
+  color: var(--primary-button-text-color) !important;
   transition: 0.2s ease-in;
   font-size: 1em;
 }
@@ -143,11 +156,11 @@ nav {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: light-dark(#1a1a1d, #faf7f0) !important;
+  color: var(--navbar-link-color) !important;
   font-size: 20px;
 }
 .navbar-dark .navbar-toggler {
-  background-color: light-dark(#1a1a1d, #114b38);
+  background-color: var(--navbar-toggler-color);
 }
 
 .navbar-nav {
