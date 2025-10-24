@@ -1,14 +1,20 @@
 body {
   font-family: "Roboto";
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, #faf7f0) !important;
+  background-color: #fbf8ef;
+  color: #1a1a1d !important;
   background-image: url("landscape.jpg");
   background-size: cover;
-
   background-attachment: fixed;
   box-sizing: border-box;
   padding: auto;
   margin: 0;
+}
+
+@supports (background-color: light-dark(#000, #000)) {
+  body {
+    background-color: light-dark(#fbf8ef, #040d12);
+    color: light-dark(#1a1a1d, #faf7f0) !important;
+  }
 }
 .container {
   max-width: 1200px;

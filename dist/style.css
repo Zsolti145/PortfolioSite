@@ -18,12 +18,27 @@ body {
 
 body {
   font-family: "Roboto";
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, #faf7f0) !important;
+  background-color: #fbf8ef;
+  color: #1a1a1d !important;
 }
+
+@supports (background-color: light-dark(#000, #000)) {
+  body {
+    background-color: light-dark(#fbf8ef, #040d12);
+    color: light-dark(#1a1a1d, #faf7f0) !important;
+  }
+}
+
 body .hireme-btn {
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, whitesmoke) !important;
+  background-color: #040d12;
+  color: whitesmoke !important;
+}
+
+@supports (background-color: light-dark(#000, #000)) {
+  body .hireme-btn {
+    background-color: light-dark(#fbf8ef, #040d12);
+    color: light-dark(#1a1a1d, whitesmoke) !important;
+  }
 }
 
 .container-header {
@@ -143,11 +158,24 @@ nav {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: light-dark(#1a1a1d, #faf7f0) !important;
+  color: #faf7f0 !important;
   font-size: 20px;
 }
+
+@supports (color: light-dark(#000, #000)) {
+  .navbar-dark .navbar-nav .nav-link {
+    color: light-dark(#1a1a1d, #faf7f0) !important;
+  }
+}
+
 .navbar-dark .navbar-toggler {
-  background-color: light-dark(#1a1a1d, #114b38);
+  background-color: #114b38;
+}
+
+@supports (background-color: light-dark(#000, #000)) {
+  .navbar-dark .navbar-toggler {
+    background-color: light-dark(#1a1a1d, #114b38);
+  }
 }
 
 .navbar-nav {
