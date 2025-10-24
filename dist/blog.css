@@ -1,7 +1,20 @@
+:root {
+  color-scheme: light dark;
+  --body-bg-color: #fbf8ef;
+  --body-text-color: #1a1a1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #040d12;
+    --body-text-color: #faf7f0;
+  }
+}
+
 body {
   font-family: "Roboto";
-  background-color: light-dark(#fbf8ef, #040d12);
-  color: light-dark(#1a1a1d, #faf7f0) !important;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color) !important;
   background-image: url("landscape.jpg");
   background-size: cover;
 
