@@ -60,3 +60,51 @@ body {
   color: white;
   transition: 0.3s ease;
 }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: #faf7f0;
+  background-color: rgba(139, 133, 133, 0.3);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: rgba(92, 131, 116, 0.8);
+  transform: translateX(-4px);
+  color: #faf7f0;
+}
+
+.blog-article {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: inherit;
+}
+
+.blog-article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-article p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .back-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .blog-article {
+    padding: 1.5rem;
+  }
+}
