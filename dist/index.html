@@ -50,7 +50,7 @@
             <h1>Hi! I am <span class="about-name">Zsolt</span></h1>
             <p>I'm a beginner freelance web developer. I really enjoy making websites or webapps. I want to gain more
                 experience while working in the profession and in a team.</p>
-            <button class="btn">Get strarted!</button>
+            <button class="btn">Get started!</button>
         </div>
         <div class="header-image"> <img src="img/codeing.svg" alt="nftprof" style="align-self: start; "></div>
     </header>
@@ -80,7 +80,7 @@
                             <img src="img/portfolio.png" alt="Portfolioproject" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title-project">Portfolio Site</h3>
-                                <p>This portfolio website is my first serious project,where I could practice building
+                                <p>This portfolio website is my first serious project, where I could practice building
                                     the website and publishing it with version control.</p>
                             </div>
                         </div>
@@ -92,8 +92,8 @@
                         <div class="card h-100">
                             <img src="img/finalexam.jpg" class="card-img-top" alt="finalexam promo">
                             <div class="card-body">
-                                <h3 class="card-title-project">My finalexam site</h3>
-                                <p>I made it when i were at High School</p>
+                                <h3 class="card-title-project">My final exam site</h3>
+                                <p>I made it when I was in high school.</p>
                             </div>
                         </div>
                     </a>
@@ -104,8 +104,8 @@
                         <div class="card h-100">
                             <img src="img/realfan.png" class="card-img-top" alt="therealfan project">
                             <div class="card-body">
-                                <h3 class="card-title-project">The realfan</h3>
-                                <p>A cool little webapp that check if you are a Real The Weeknd fan!</p>
+                                <h3 class="card-title-project">The Realfan</h3>
+                                <p>A cool little web app that checks if you are a real The Weeknd fan!</p>
                             </div>
                         </div>
                     </a>
@@ -117,7 +117,7 @@
                             <img src="img/KonfigBox.png" class="card-img-top" alt="The konfigbox project">
                             <div class="card-body">
                                 <h3 class="card-title-project">KonfigBox</h3>
-                                <p>A website for my imaginary Pc configurator company</p>
+                                <p>A website for my imaginary PC configurator company.</p>
                             </div>
                         </div>
                     </a>
@@ -200,20 +200,20 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <h2 class="mb-4">Contact Me</h2>
                     <form class="contact-form" id="regForm" action="https://formsubmit.co/zsoltika192@gmail.com"
-                        method="POST" netlify>
+                        method="POST" data-netlify="true">
                         <div class="mb-3">
                             <span class="star" id="emailError"></span>
-                            <input class="form-control" type="text" id="email" placeholder="Your Email"
-                                autocomplete="email">
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Your Email"
+                                autocomplete="email" required>
                         </div>
                         <span class="star" id="nameError"></span>
                         <div class="mb-3">
-                            <input class="form-control" type="text" id="username" placeholder="Your name">
+                            <input class="form-control" type="text" id="username" name="name" placeholder="Your name" required>
                         </div>
                         <span class="star" id="textareaError"></span>
                         <div class="mb-3">
                             <textarea class="form-control" name="message" id="texta" cols="30" rows="5"
-                                placeholder="Hit me up with your message"></textarea>
+                                placeholder="Hit me up with your message" required></textarea>
                         </div>
                         <div class="mb-3">
                             <input type="hidden" name="_next" value="https://lzsportfolio.netlify.app/?#contact">

@@ -23,13 +23,15 @@ $(document).ready(function () {
     let error = $("#nameError");
 
     if (user != "") {
-      if (user.length < 6) {
+      if (user.length < 2) {
         error.text("Name is too short");
-      } else if (user.length > 20) {
+        return false;
+      } else if (user.length > 50) {
         error.text("Name is too long");
+        return false;
       } else {
         error.text("");
-        return false;
+        return true;
       }
     } else {
       error.text("Name is required!");
@@ -45,13 +47,15 @@ $(document).ready(function () {
     if (textarea != "") {
       if (textarea.length < 6) {
         error.text("The message is too short");
+        return false;
       } else if (textarea.length > 255) {
         error.text("The message is too long");
-      }else{
-        error.text("");
         return false;
-        }
-    }else{
+      } else {
+        error.text("");
+        return true;
+      }
+    } else {
       error.text("Message is required");
       return false;
     }
