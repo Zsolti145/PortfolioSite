@@ -1,237 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Lázár Zsolt portfólió – Webfejlesztő, frontend fejlesztés, projektek és elérhetőség."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Lázár Zsolt Portfólio</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="jquery.js"></script>
-        <script src="index.js"></script>
-              <link rel="stylesheet" href="style.css">
-    <title>Zsolt Lazar Portfolio</title>
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a href="#"><img class="profile" src="img/pixiz.png" alt="nftprof"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                </ul>
-                <a href="#contact"><button class="hireme-btn">Hire me</button></a>
-
-            </div>
+      <div class="container">
+        <a href="#"
+          ><img class="profile" src="img/pixiz.png" alt="nftprof"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Rólam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projektek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Szolgáltatások</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+          <a href="#contact"
+            ><button class="hireme-btn">béreljen fel</button></a
+          >
         </div>
+      </div>
     </nav>
     <header class="container-header row row-cols-1 row-cols-md-2" id="about">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h1>Hi! I am <span class="about-name">Zsolt</span></h1>
-            <p>I'm a beginner freelance web developer. I really enjoy making websites or webapps. I want to gain more
-                experience while working in the profession and in a team.</p>
-            <button class="btn">Get started!</button>
-        </div>
-        <div class="header-image"> <img src="img/codeing.svg" alt="nftprof" style="align-self: start; "></div>
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h1>Üdvözöllek! a nevem <span class="about-name">Zsolt</span></h1>
+        <p>
+          Kezdő frontend és backend fejlesztő vagyok,célom hogy rengeteget
+          fejlődjek a szakmában,és hogy az általam létre hozott weboldalak/appok
+          nem csak mobil barát de megfeleljenek a modern elvárásoknak is.
+        </p>
+        <a href="#contact"><button class="btn">Kezdjük!</button></a>
+      </div>
+      <div class="header-image">
+        <img src="img/codeing.svg" alt="nftprof" style="align-self: start" />
+      </div>
     </header>
 
     <section class="blog">
-        <div class="container " >
-            <h2 class="mb-4">Blog</h2>
-            <div class="wrapper row row-cols-1 row-cols-md-3 g-4 " >
-                <div class="glass-card "  >
-                    <p>Dive into a new dimension</p>
-                       <a href="blog.html">Drop</a>
-                </div>
-
-            </div>
-
+      <div class="container">
+        <h2 class="mb-4">Blog</h2>
+        <div class="wrapper row row-cols-1 row-cols-md-3 g-4">
+          <div class="glass-card">
+            <p>Merülj el egy új dimenzióban!</p>
+            <a href="blog.html">Ugrás</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="container py-5" id="projects">
-        <div class="">
-            <span class="blur2"></span>
-            <span class="blur2"></span>
-            <h2 class="mb-4 projectHeader">Projects</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <a class="cardLink" href="#projects">
-                        <div class="card h-100">
-                            <img src="img/portfolio.png" alt="Portfolioproject" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title-project">Portfolio Site</h3>
-                                <p>This portfolio website is my first serious project, where I could practice building
-                                    the website and publishing it with version control.</p>
-                            </div>
-                        </div>
-                    </a>
+      <div class="">
+        <span class="blur2"></span>
+        <span class="blur2"></span>
+        <h2 class="mb-4 projectHeader">Projects</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <a class="cardLink" href="#projects">
+              <div class="card h-100">
+                <img
+                  src="img/portfolio.png"
+                  alt="Portfolioproject"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h3 class="card-title-project">Portfólio Oldal</h3>
+                  <p>
+                    Ez az első komolyabb projektem,melyet 2023-ban kezdtem,azért
+                    hogy
+                  </p>
                 </div>
+              </div>
+            </a>
+          </div>
 
-                <div class="col">
-                    <a class="cardLink" href="#">
-                        <div class="card h-100">
-                            <img src="img/finalexam.jpg" class="card-img-top" alt="finalexam promo">
-                            <div class="card-body">
-                                <h3 class="card-title-project">My final exam site</h3>
-                                <p>I made it when I was in high school.</p>
-                            </div>
-                        </div>
-                    </a>
+          <div class="col">
+            <a class="cardLink" href="#">
+              <div class="card h-100">
+                <img
+                  src="img/finalexam.jpg"
+                  class="card-img-top"
+                  alt="finalexam promo"
+                />
+                <div class="card-body">
+                  <h3 class="card-title-project">
+                    Záróvizsgára készített oldal
+                  </h3>
+                  <p>Szoftverfejelsztői okj-re</p>
                 </div>
+              </div>
+            </a>
+          </div>
 
-                <div class="col">
-                    <a class="cardLink" href="https://therealfan.netlify.app">
-                        <div class="card h-100">
-                            <img src="img/realfan.png" class="card-img-top" alt="therealfan project">
-                            <div class="card-body">
-                                <h3 class="card-title-project">The Realfan</h3>
-                                <p>A cool little web app that checks if you are a real The Weeknd fan!</p>
-                            </div>
-                        </div>
-                    </a>
+          <div class="col">
+            <a class="cardLink" href="https://therealfan.netlify.app">
+              <div class="card h-100">
+                <img
+                  src="img/realfan.png"
+                  class="card-img-top"
+                  alt="therealfan project"
+                />
+                <div class="card-body">
+                  <h3 class="card-title-project">The Realfan</h3>
+                  <p>
+                    Egy könnyed webalkalamazás amely eldönti mennyire vagy igazi
+                    rajongója a TheWeeknd-nek :D
+                  </p>
                 </div>
+              </div>
+            </a>
+          </div>
 
-                <div class="col">
-                    <a class="cardLink" href="https://konfigbox.netlify.app">
-                        <div class="card h-100">
-                            <img src="img/KonfigBox.png" class="card-img-top" alt="The konfigbox project">
-                            <div class="card-body">
-                                <h3 class="card-title-project">KonfigBox</h3>
-                                <p>A website for my imaginary PC configurator company.</p>
-                            </div>
-                        </div>
-                    </a>
+          <div class="col">
+            <a class="cardLink" href="https://konfigbox.netlify.app">
+              <div class="card h-100">
+                <img
+                  src="img/KonfigBox.png"
+                  class="card-img-top"
+                  alt="The konfigbox project"
+                />
+                <div class="card-body">
+                  <h3 class="card-title-project">KonfigBox</h3>
+                  <p>
+                    Az első egyetemi webapp beadnadóm,ahol a legalapabb react
+                    tehcnológiákat kellett felhasználni
+                  </p>
+                  <p>
+                    Egy képzeletbeli Pc alkatrészekkel foglalkozó Cég weboldalát
+                    ksézítettem
+                  </p>
                 </div>
-            </div>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="skills" class="container py-5">
-        <div class="container">
-            <h2 class="mb-4" id="skillsHeader">Skills</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div id="carbod" class="card h-100 skill-cards">
-                        <div class="card-body">
-                            <i class="fa-solid fa-code"></i>
-                            <h3 class="card-title-skills">Frontend</h3>
-                            <hr>
-                            <p class="card-text">HTML, CSS, JavaScript<br>
-                                Client-server usage, Git and Github user-level version handling knowledge,
-                                Framework: Bootstrap ,Responsive Design.
-                                (I just get started to learn React)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card cd-skills h-100">
-                        <div class="card-body">
-                            <i class="fa-solid fa-database"></i>
-                            <h3 class="card-title-skills">Backend</h3>
-                            <hr>
-                            <p class="card-text">C# and object-oriented development, Java, PHP, and Python at a beginner
-                                level</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fa-solid fa-pen"></i>
-                            <h3 class="card-title-skills">Design</h3>
-                            <hr>
-                            <p class="card-text">Using modern and <span class="spflat">/flat design/</span>,
-                                editing illustrations,
-                                learning how to make cool UI/UX elements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <i class="fa-solid fa-palette"></i>
-                            <h3 class="card-title-skills">Creative</h3>
-                            <hr>
-                            <p class="card-text">I really like editing videos, making Photoshop images in my free time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="mb-4" id="skillsHeader">Skills</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div id="carbod" class="card h-100 skill-cards">
+              <div class="card-body">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="card-title-skills">Frontend</h3>
+                <hr />
+                <p class="card-text">
+                  HTML, CSS, JavaScript,<br />
+                  kliens–szerver működés ismerete.Git és GitHub verziókezelési
+                  alapismeretek. Keretrendszerek: Bootstrap, reszponzív dizájn.
+                  Alapszintű React-tudás.<br />
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card cd-skills h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-database"></i>
+                <h3 class="card-title-skills">Backend</h3>
+                <hr />
+                <p class="card-text">
+                  C# objektumorientált programozás, kezdő szintű Java, Python
+                  gépi tanulás, valamint PHP fejlesztési tapasztalat. Alapszintű xampp és mysql ismeretek
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-pen"></i>
+                <h3 class="card-title-skills">Design</h3>
+                <hr />
+                <p class="card-text">
+                  Modern  és <span class="spflat">/flat/</span>dizájn,
+                  különösen Glassmorphism stílus ami tetszik ,de a letisztult minimalista írány se áll távol tőlem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-palette"></i>
+                <h3 class="card-title-skills">Creative</h3>
+                <hr />
+                <p class="card-text">
+                  Érdekelnek a kretív projektek videóvágás terén is,alap szintű
+                  Adobe Premiere Pro ismeretekkel rendelkezem.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <section id="socials" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Socials</h2>
-            <p>Instagram <i class="bi bi-instagram"></i>: <a href="https://www.instagram.com/a_lzr_/"
-                    target="_blank">Check my pictures</a></p>
-            <p>Linked<i class="bi bi-linkedin"></i>: LinkedIn profile soon!</p>
-            <p>GitHub<i class="bi bi-github"></i> :<a href="https://github.com/Zsolti145" target="_blank">Zsolti145</a>
-            </p>
-        </div>
+      <div class="container">
+        <h2 class="mb-4">Socials</h2>
+        <p>
+          Instagram <i class="bi bi-instagram"></i>:
+          <a href="https://www.instagram.com/a_lzr_/" target="_blank"
+            >Nézd meg a fotóimat</a
+          >
+        </p>
+        <p>Linked<i class="bi bi-linkedin"></i>: LinkedIn profil hamarosan!</p>
+        <p>
+          GitHub<i class="bi bi-github"></i> :<a
+            href="https://github.com/Zsolti145"
+            target="_blank"
+            >Zsolti145</a
+          >
+        </p>
+      </div>
     </section>
 
     <footer class="text-white text-center py-3">
-        <section id="contact" class="contact-form">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <h2 class="mb-4">Contact Me</h2>
-                    <form class="contact-form" id="regForm" action="https://formsubmit.co/zsoltika192@gmail.com"
-                        method="POST" data-netlify="true">
-                        <div class="mb-3">
-                            <span class="star" id="emailError"></span>
-                            <input class="form-control" type="email" id="email" name="email" placeholder="Your Email"
-                                autocomplete="email" required>
-                        </div>
-                        <span class="star" id="nameError"></span>
-                        <div class="mb-3">
-                            <input class="form-control" type="text" id="username" name="name" placeholder="Your name" required>
-                        </div>
-                        <span class="star" id="textareaError"></span>
-                        <div class="mb-3">
-                            <textarea class="form-control" name="message" id="texta" cols="30" rows="5"
-                                placeholder="Hit me up with your message" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <input type="hidden" name="_next" value="https://lzsportfolio.netlify.app/?#contact">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-            </div>
-        </section>
-        <hr>
-        <p>&copy; 2024 Zsolt Lazar</p>
+      <section id="contact" class="contact-form">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <h2 class="mb-4">Vedd fel a kapcsoaltot velem!</h2>
+            <form
+              class="contact-form"
+              id="regForm"
+              action="https://formsubmit.co/zsoltika192@gmail.com"
+              method="POST"
+              data-netlify="true"
+            >
+              <div class="mb-3">
+                <span class="star" id="emailError"></span>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email:"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <span class="star" id="nameError"></span>
+              <div class="mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="username"
+                  name="name"
+                  placeholder="Neved:"
+                  required
+                />
+              </div>
+              <span class="star" id="textareaError"></span>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="texta"
+                  cols="30"
+                  rows="5"
+                  placeholder="Írd meg az üzeneted:(akár munkával kapcsolatos)"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://lzsportfolio.netlify.app/?#contact"
+                />
+                <button type="submit" class="btn btn-primary">Küldés</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <p>&copy; 2025 Zsolt Lazar</p>
     </footer>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
