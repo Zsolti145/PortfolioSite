@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#BBC863">
+    
+    
+    <link rel="icon" href="img/favicon.ico" type="image/x
     <meta
       name="description"
       content="Lázár Zsolt portfólió – Webfejlesztő, frontend fejlesztés, projektek és elérhetőség."
@@ -23,6 +28,10 @@
     <meta property="og:url" content="https://lzsportfolio.netlify.app" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="hu_HU" />
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -38,13 +47,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="jquery.js"></script>
+   
+    <link rel="canonical" href="https://lzsportfolio.netlify.app/">
+   
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Lázár Zsolt Portfólio</title>
   </head>
 
   <body>
+     <!-- ==================
+              NAVBAR
+         ================== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a href="#"
@@ -82,6 +96,9 @@
         </div>
       </div>
     </nav>
+     <!-- ==================
+              HEADER
+         ================== -->
     <header class="container-header row row-cols-1 row-cols-md-2" id="about">
       <div class="content">
         <span class="blur"></span>
@@ -98,7 +115,9 @@
         <img src="img/codeing.svg" alt="nftprof" style="align-self: start" />
       </div>
     </header>
-
+ <!-- ==================
+              BLOG
+         ================== -->
     <section class="blog">
       <div class="container">
         <h2 class="mb-4">Blog</h2>
@@ -110,7 +129,9 @@
         </div>
       </div>
     </section>
-
+     <!-- ==================
+              PROJEKTEK
+         ================== -->
     <section class="container py-5" id="projects">
       <div class="">
         <span class="blur2"></span>
@@ -137,7 +158,7 @@
           </div>
 
           <div class="col">
-            <a class="cardLink" href="#">
+            <a class="cardLink" href="#projects">
               <div class="card h-100">
                 <img
                   src="img/finalexam.jpg"
@@ -198,7 +219,10 @@
         </div>
       </div>
     </section>
-
+   
+ <!-- ==================
+              SKILLEK
+         ================== -->
     <section id="skills" class="container py-5">
       <div class="container">
         <h2 class="mb-4" id="skillsHeader">Skills</h2>
@@ -253,7 +277,7 @@
                 <h3 class="card-title-skills">Creative</h3>
                 <hr />
                 <p class="card-text">
-                  Érdekelnek a kretív projektek videóvágás terén is,alap szintű
+                  Érdekelnek a kreatív projektek videóvágás terén is,alap szintű
                   Adobe Premiere Pro ismeretekkel rendelkezem.
                 </p>
               </div>
@@ -262,7 +286,9 @@
         </div>
       </div>
     </section>
-
+    <!-- ==================
+              SOCIALS
+         ================== -->
     <section id="socials" class="py-5">
       <div class="container">
         <h2 class="mb-4">Socials</h2>
@@ -287,7 +313,7 @@
       <section id="contact" class="contact-form">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
-            <h2 class="mb-4">Vedd fel a kapcsoaltot velem!</h2>
+            <h2 class="mb-4">Vedd fel a kapcsolatot velem!</h2>
             <form
               class="contact-form"
               id="regForm"

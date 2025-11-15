@@ -10,10 +10,10 @@ $(document).ready(function () {
         error.text("");
         return true;
       } else {
-        error.text("Wrong Email format!");
+        error.text("Rossz email forátum!");
       }
     } else {
-      error.text("Email is required!");
+      error.text("Az email kötelező!");
     }
     return false;
   }
@@ -23,18 +23,18 @@ $(document).ready(function () {
     let error = $("#nameError");
 
     if (user != "") {
-      if (user.length < 2) {
-        error.text("Name is too short");
+      if (user.length < 6) {
+        error.text("Túl rövid a név");
         return false;
-      } else if (user.length > 50) {
-        error.text("Name is too long");
+      } else if (user.length > 30) {
+        error.text("Túl hosszú a név");
         return false;
       } else {
         error.text("");
         return true;
       }
     } else {
-      error.text("Name is required!");
+      error.text("A név kötelező!");
       return false;
     }
     return false;
@@ -46,17 +46,17 @@ $(document).ready(function () {
 
     if (textarea != "") {
       if (textarea.length < 6) {
-        error.text("The message is too short");
+        error.text("Túl rövid üzenet");
         return false;
       } else if (textarea.length > 255) {
-        error.text("The message is too long");
+        error.text("Túl hosszú üzenet");
         return false;
       } else {
         error.text("");
         return true;
       }
     } else {
-      error.text("Message is required");
+      error.text("Az üzenetet kötelező kitölteni!");
       return false;
     }
     return false;
@@ -77,6 +77,7 @@ $(document).ready(function () {
       event.preventDefault();
     }
   });
+
 
 // Select all links with hashes
 $('a[href*="#"]')
